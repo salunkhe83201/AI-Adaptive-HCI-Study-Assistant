@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Adaptive HCI Study Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="quiz-container">
+        <h1>AI Adaptive HCI Study Assistant</h1>
+
+        <section class="status-panel" aria-label="Study status">
+            <span>Current Level: <strong id="level-display">Beginner</strong></span>
+            <span>Score: <strong id="score-display">0</strong></span>
+            <span>Attempts: <strong id="attempts-display">0</strong></span>
+        </section>
+
+        <section class="question-panel" aria-live="polite">
+            <h2 id="question-text">Question will appear here</h2>
+            <div id="answer-buttons"></div>
+            <p id="feedback-message"></p>
+            <p id="adaptation-message"></p>
+        </section>
+
+        <div class="control-panel">
+            <button id="next-button" type="button" disabled>Next Question</button>
+            <button id="reset-button" type="button">Reset Progress</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
